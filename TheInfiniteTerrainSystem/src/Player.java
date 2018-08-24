@@ -1,14 +1,15 @@
 
 public class Player {
-	String name; 
-	int x; 
-	int y; 
+	private String name; 
+	private String status;
+	private int x; 
+	private int y; 
 
-	public Player(String name, int x, int y) {
+	public Player(String name, int x, int y, String status) {
 		this.name = name; 
 		this.x = x;
 		this.y = y; 
-		
+		this.status = status; 
 	}
 	
 	public void updatePlayerPosition(String d, Player p)
@@ -40,6 +41,14 @@ public class Player {
 	
 	
 	
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
 	public String getName() {
 		return name;
 	}
